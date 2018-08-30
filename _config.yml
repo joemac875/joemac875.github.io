@@ -25,7 +25,6 @@ github_username: joemac875
 
 # Build settings
 markdown: kramdown
-remote_theme: space-jekyll-template
 plugins:
   - jekyll-feed
 
