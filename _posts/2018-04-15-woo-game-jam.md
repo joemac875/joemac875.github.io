@@ -1,4 +1,9 @@
-# Woo Game Jam
+---
+layout: post
+title:  "Woo Game Jame"
+date:   2018-04-15 18:00:00 -0400
+categories: jekyll update
+---
 
 My friend and fellow classmate, Avi Vajpeyi and I decided that we wanted to participate in the [Ludum Dare]() game jam – a global game creation competition that takes place over a single weekend. As we talked, however, we realized it would be much more exciting to get other students at Wooster involved. Thus, we decided to organize a game jam event at the College coinciding with Ludum Dare 41.
 
