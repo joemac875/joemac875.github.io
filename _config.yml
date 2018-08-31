@@ -41,4 +41,4 @@ plugins:
 #   - vendor/ruby/
 
 
-theme: jekyll-theme-midnight
+theme: minima
