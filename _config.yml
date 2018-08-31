@@ -39,5 +39,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-theme: jekyll-theme-merlot
+remote_theme: space-jekyll-template
