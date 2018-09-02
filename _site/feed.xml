@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joe MacInnes</title>
+    <description>senior computer science major at the college of wooster with a minor in classical languages</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 01 Sep 2018 22:33:19 -0400</pubDate>
+    <lastBuildDate>Sat, 01 Sep 2018 22:33:19 -0400</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Woo Game Jame</title>
+        <description>&lt;p&gt;My friend and fellow classmate, Avi Vajpeyi and I decided that we wanted to participate in the &lt;a href=&quot;&quot;&gt;Ludum Dare&lt;/a&gt; game jam – a global game creation competition that takes place over a single weekend. As we talked, however, we realized it would be much more exciting to get other students at Wooster involved. Thus, we decided to organize a game jam event at the College coinciding with Ludum Dare 41.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/jam.jpg&quot; alt=&quot;Demoing the Finished Games&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It was a success! We got alumni working in the industry to video call in and share tips for success, consumed a lot of snacks, and even managed to provide tshirts. By the end of the weekend, six teams had created playable games, which we demoed in the campus’s student center.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/eKdHRfMhVDI&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Avi and I, along with two other students, Thomas Matlak and Alex Iudice fielded our own game as well, which we called Time Turner. The game jam’s theme was ‘two incompatible games,’ so we jammed together turn-based strategy with racing games. The game takes the player through a series of levels in which they must avoid enemy chase cars in the whilst navigating to an objective. The caveat, however, is that the player can drive while the enemy cars are frozen in time, but they themselves, after a short pause, are frozen while the enemy cars drive.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Apr 2018 18:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2018/woo-game-jam/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/woo-game-jam/</guid>
+        
+        
+        <category>leadership</category>
+        
+      </item>
+    
+      <item>
+        <title>Ashesi Innovation Experience Coach</title>
+        <description>&lt;p&gt;I worked for Ashesi University College in Ghana over the course of four weeks as part of the Ashesi Innovation Experience (AIX). AIX is an intense and exciting two-week enrichment program developed by faculty at Ashesi for senior high school students between the ages of 15 and 20.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/ashesiSession.jpg&quot; alt=&quot;Early on during an engineering session. Each coach (my job) was responsible for teaching a small group of students in the session the necessary principles and concepts.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;My role was a coach, who were in closest contact with the participating students. The responsibilities of a coach were twofold. First, they made sure that the students were alright at all times and fully participating/socializing. Essentially, the coaches were something like camp counselors. Secondly, the coaches had to teach and monitor the progress of small student cohorts during their module sessions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/aixTeam.jpg&quot; alt=&quot;My cohort and I.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There were three modules: engineering, robotics, and entrepreneurship. I was assigned to engineering, where we oversaw the students as they constructed smart houses using Arduino boards and an array of sensors. While most of the students had never dealt with circuitry or programmed before, by the end of the program, they had learned Arduino C and basic electrical engineering concepts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/ashesiHouse.jpg&quot; alt=&quot;A mock smart home under construction.&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 Aug 2017 18:42:40 -0400</pubDate>
+        <link>http://localhost:4000/2017/ashesi-innovation-experience-coach/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/ashesi-innovation-experience-coach/</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
