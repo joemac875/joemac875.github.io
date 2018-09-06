@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joe MacInnes</title>
-    <description>senior computer science major at the college of wooster with a minor in classical languages</description>
+    <description>senior computer science major at the college of wooster with a minor in classical studies</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 01 Sep 2018 22:33:19 -0400</pubDate>
-    <lastBuildDate>Sat, 01 Sep 2018 22:33:19 -0400</lastBuildDate>
+    <pubDate>Wed, 05 Sep 2018 22:20:58 -0400</pubDate>
+    <lastBuildDate>Wed, 05 Sep 2018 22:20:58 -0400</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
@@ -52,6 +52,98 @@
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Goodyear Internship</title>
+        <description>&lt;p&gt;I worked on a team of four students as a consultant for Goodyear. We worked for the company through the College of Wooster’s Applied Methods Research Experience (AMRE). AMRE matches students at the College with companies who need problems solved. Thus, we worked for advisors at Goodyear, but did most of our work at the College.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/goodyear-team-advisors.jpg&quot; alt=&quot;The Team with Our Advisors&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The main aim of this project was to identify and analyze the effects of some geolocational factors such as road roughness, road curvature, elevation change, weather, and traffic on tire tread wear. Goodyear provided us with data concerning the tire tread wear rates of different kinds of tires in several different zip codes. The majority of work done involved getting data for our factors, generating features from this data, and creating a model from these features. The main deliverable for the project was a model that explained the effect of the mentioned geolocational factors and enabled Goodyear to calculate a predicted tread wear rate for any region in the United States.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 10 Jul 2017 18:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2017/goodyear-internship/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/goodyear-internship/</guid>
+        
+        
+        <category>internships</category>
+        
+      </item>
+    
+      <item>
+        <title>Motion Controlled Skid Rover</title>
+        <description>&lt;p&gt;This project allows a user to control a skid-steer rover using only hand angles. A pair of gloves - each with an accelerometer - attached to an Arduino Uno and wireless transceiver sends orientation information to a rover with controlled by an Arduino Mega with another wireless transceiver. Each glove and accelerometer pairing corresponds to one of the two motors on the rover. When both hands are level, the motors on the rover don’t engage. If one hand angles downward, the corresponding motor causes its tread to move forward. If the hand angles upward, the tread moves in reverse.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/xtq54M5oJJM&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Mon, 23 Jan 2017 17:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2017/skid-rover-gloves/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/skid-rover-gloves/</guid>
+        
+        
+        <category>robotics</category>
+        
+      </item>
+    
+      <item>
+        <title>History Department Internship</title>
+        <description>&lt;p&gt;For this internship I worked on a team of six students to prepare a physical history exhibit and website for the College of Wooster’s 150th anniversary celebration.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-exhibit-and-virtual-old-main&quot;&gt;The Exhibit and Virtual Old Main&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/old-main-old.jpg&quot; alt=&quot;Old Main before its wing editions&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Old Main before its wing editions.
+My largest contribution to the history exhibit was a virtual tour of Old Main, the original campus building. Before it burned down in 1901, it was the College’s only building, and it housed all the departments and facilities. The only remains of the building I used to reconstruct it were pictures, dimensions recovered from old catalogues my colleagues obtained, and newspaper accounts.&lt;/p&gt;
+
+&lt;p&gt;I used Blender to construct the building and its interior. In total, I modeled six rooms , the exterior, hallways, and central staircase fully. I then used these assets in Unity  in order to create a virtual tour allowing a user walk around the building. The tour was on display for the entirety of the physical exhibit, but is no longer accessible for viewing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/oldmainShot.png&quot; alt=&quot;The exterior of my recreation. A screenshot from the virtual tour.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The exterior of my recreation. A screenshot from the virtual tour.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://p3d.in/e/9ny2V&quot; allowsfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot; width=&quot;100%&quot; height=&quot;340&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;the-website&quot;&gt;The Website&lt;/h3&gt;
+
+&lt;p&gt;Designed to be a companion to the exhibit, the website was the bulk of the team’s work. It features many articles detailing pieces of the College’s history.&lt;/p&gt;
+
+&lt;p&gt;Myself and another student intern did the bulk of creating the architecture of the site and its design with WordPress and a custom theme (we hacked an existing theme).&lt;/p&gt;
+
+&lt;p&gt;The whole team conducted archival research and wrote articles for the site. It can be found at &lt;a href=&quot;&amp;quot;150th.wooster.edu&amp;quot;&quot;&gt;150th.wooster.edu&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/websiteShot.png&quot; alt=&quot;A screenshot of the website's home page&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 10 Jul 2016 18:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2016/history-department-internship/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/history-department-internship/</guid>
+        
+        
+        <category>interships</category>
+        
+      </item>
+    
+      <item>
+        <title>Robotic Arm OpenCV</title>
+        <description>&lt;p&gt;This project combines a robotic arm with OpenCV in order to map arm movements of a human user to the robotic arm. The robotic arm itself has three degrees of freedom and was built using &lt;a href=&quot;http://www.instructables.com/id/Pocket-Sized-Robot-Arm-meArm-V04/&quot;&gt;this Instructables document&lt;/a&gt;. The gripper of the arm is currently non-functioning (the woes of broken servos).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/science-day.png&quot; alt=&quot;An earlier iteration of the project in which the tracking of the hand was done using thresholding. This was taken on Science Day at the College of Wooster, where clubs get to show members of the community what they do.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to read human arm movements I used OpenCV-Python to write a script that uses a laptop’s webcam to track a monochromatic, gloved hand. The script has a calibration phase which stores the maximums of the human user’s reach in the directions which the arm can travel (forward/backward, left/right, up/down). Then, it continually reads the center location of the hand (for up/down and left/right motion) and the size of the hand onscreen (for forward/backward motion) and maps these values in relation to their maximums to servo positions.&lt;/p&gt;
+
+&lt;p&gt;I did the project as part of the Wooster robotics club. The script can be found on the &lt;a href=&quot;https://github.com/joemac875/robot-arm-opencv&quot;&gt;Github Project Page&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;315&quot; src=&quot;http://www.youtube.com/embed/rfqXUseKGMc&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Thu, 10 Mar 2016 17:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2016/robot-arm/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/robot-arm/</guid>
+        
+        
+        <category>robotics</category>
         
       </item>
     

@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="robots" content="noindex">
-  
 
-  <title>Tags</title>
-  <meta name="description" content="senior computer science major at the college of wooster with a minor in classical studies">
+  <title>Robotic Arm OpenCV</title>
+  <meta name="description" content="This project combines a robotic arm with OpenCV in order to map arm movements of a human user to the robotic arm. The robotic arm itself has three degrees of freedom and was built using this Instructables document. The gripper of the arm is currently non-functioning (the woes of broken servos).
+
+">
   <meta name="author" content="Joe MacInnes">
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -18,14 +18,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Tags">
-  <meta name="twitter:description" content="senior computer science major at the college of wooster with a minor in classical studies">
+  <meta name="twitter:title" content="Robotic Arm OpenCV">
+  <meta name="twitter:description" content="This project combines a robotic arm with OpenCV in order to map arm movements of a human user to the robotic arm. The robotic arm itself has three degrees of freedom and was built using this Instructables document. The gripper of the arm is currently non-functioning (the woes of broken servos).
+
+">
   
   <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Tags">
-  <meta property="og:description" content="senior computer science major at the college of wooster with a minor in classical studies">
+  <meta property="og:title" content="Robotic Arm OpenCV">
+  <meta property="og:description" content="This project combines a robotic arm with OpenCV in order to map arm movements of a human user to the robotic arm. The robotic arm itself has three degrees of freedom and was built using this Instructables document. The gripper of the arm is currently non-functioning (the woes of broken servos).
+
+">
   <meta property="og:image" content="/images/favicons/favicon-194x194.png" />
 
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png">
@@ -49,7 +53,7 @@
   <meta name="theme-color" content="#ffffff">
   
   <link rel="stylesheet" href="/css/main.css?1536200458268125000">
-  <link rel="canonical" href="http://localhost:4000/tags/">
+  <link rel="canonical" href="http://localhost:4000/2016/robot-arm/">
   <link rel="alternate" type="application/rss+xml" title="Joe MacInnes" href="/feed.xml">
 </head>
 
@@ -144,12 +148,31 @@
 
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
-        <h2>Tags:</h2>
-<div class="tags"> 
+        <article class="post-container post-container--single">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2016-03-10 17:00" class="post-meta__date date">10 Mar 2016</time>
+      
+    </div>
+    <h1 class="post-title">Robotic Arm OpenCV</h1>
+  </header>
 
-</div>
+  <section class="post">
+    <p>This project combines a robotic arm with OpenCV in order to map arm movements of a human user to the robotic arm. The robotic arm itself has three degrees of freedom and was built using <a href="http://www.instructables.com/id/Pocket-Sized-Robot-Arm-meArm-V04/">this Instructables document</a>. The gripper of the arm is currently non-functioning (the woes of broken servos).</p>
 
-<!-- iterate through all tags on the site --> 
+<p><img src="/assets/science-day.png" alt="An earlier iteration of the project in which the tracking of the hand was done using thresholding. This was taken on Science Day at the College of Wooster, where clubs get to show members of the community what they do." /></p>
+
+<p>In order to read human arm movements I used OpenCV-Python to write a script that uses a laptop’s webcam to track a monochromatic, gloved hand. The script has a calibration phase which stores the maximums of the human user’s reach in the directions which the arm can travel (forward/backward, left/right, up/down). Then, it continually reads the center location of the hand (for up/down and left/right motion) and the size of the hand onscreen (for forward/backward motion) and maps these values in relation to their maximums to servo positions.</p>
+
+<p>I did the project as part of the Wooster robotics club. The script can be found on the <a href="https://github.com/joemac875/robot-arm-opencv">Github Project Page</a></p>
+
+<iframe width="100%" height="315" src="http://www.youtube.com/embed/rfqXUseKGMc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+  </section>
+  
+</article>
+
+
 
       </div>
 
