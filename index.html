@@ -11,14 +11,15 @@ robots: noindex
     }
     #mynetwork {
       width: 100%;
-      height: 600px;
-      border: 0px solid lightgray;
-      background-color:#ffffff;
+      height: 450px;
+      border: 1px solid lightgray;
+      background-color:#b3b3b3;
     }
   </style>
   <div id="mynetwork"></div>
 
   <script type="text/javascript">
+    var last = '';
     var DIR = '{{site.baseurl}}/assets/';
     // create an array with nodes
     var nodes = new vis.DataSet([
@@ -30,10 +31,10 @@ robots: noindex
       {id: 6, group: 'tools', label: 'ROS', shape: 'circularImage', image: DIR + 'ros.png'},
       {id: 7, group: 'tools', label: 'Arduino', shape: 'circularImage', image: DIR + 'arduino.png'},
       {id: 8, group: 'tools', label: 'RPi', shape: 'circularImage', image: DIR + 'rapsberrypi.png'},
-      {id: 30, group: 'projects', label: 'OpenCV Arm', shape: 'circularImage', image: DIR + 'gloveArm.jpg', title: "Poppy"},
-      {id: 32, group: 'projects' , label: 'Woo Game Jam', shape: 'circularImage', image: DIR + 'jam.jpg'},
-      {id: 33, group: 'projects', label: 'Ashesi Coach', shape: 'circularImage', image: DIR + 'ashesiHouseCropped.jpg'},
-      {id: 31, group: 'projects', label: 'Wooster\'s 150th', shape: 'circularImage', image: DIR + 'oldmainShot.png'}
+      {id: 30, group: 'projects', mapsTo: '/2016/robot-arm', label: 'OpenCV Arm', shape: 'circularImage', image: DIR + 'gloveArm.jpg'},
+      {id: 32, group: 'projects' , mapsTo: '/2018/woo-game-jam', label: 'Woo Game Jam', shape: 'circularImage', image: DIR + 'jam.jpg'},
+      {id: 33, group: 'projects', mapsTo: '/2017/ashesi-innovation-experience-coach', label: 'Ashesi Coach', shape: 'circularImage', image: DIR + 'ashesiHouseCropped.jpg'},
+      {id: 31, group: 'projects', mapsTo: '/2016/history-department-internship', label: 'Wooster\'s 150th', shape: 'circularImage', image: DIR + 'oldmainShot.png'}
     ]);
 
     // create an array with edges
@@ -44,10 +45,7 @@ robots: noindex
       {from: 31, to: 2},
       {from: 31, to: 4},
       {from: 32, to: 1},
-      {from: 33, to: 7},
-
-
-      {from: 2, to: 2}
+      {from: 33, to: 7}
     ]);
 
     // create a network
@@ -57,9 +55,14 @@ robots: noindex
       edges: edges
     };
     var options = {
+      layout: {
+        hierarchical: {
+            direction: "DU"
+        }
+      },
       nodes: {
         borderWidth:7,
-        size:30,
+        size:40,
       color: {
           border: '#222222',
           background: '#666666'
@@ -76,7 +79,7 @@ robots: noindex
           },
           projects: {
               color: {border:'lightblue'},
-              size: 55,
+              size: 60,
 
           }
       }
@@ -84,33 +87,45 @@ robots: noindex
     var network = new vis.Network(container, data, options);
     network.on("select", function (params) {
         params.event = "[original event]";
-        document.getElementById('eventSpan').innerHTML ="selected!";
+        try {
+          document.getElementById(last).style.display = 'none';
+        }
+        catch(err) {
+        }
+        try {
+          var showPost = nodes.get(this.getNodeAt(params.pointer.DOM)).mapsTo;
+          document.getElementById(showPost).style.display = 'block';
+          last = showPost;
+        }
+        catch(err) {
+        }
+
         console.log('click event, getNodeAt returns: ' + this.getNodeAt(params.pointer.DOM));
     });
   </script>
-<div id="eventSpan">
-hello
-</div>
+
 <div class="main-post-list">
 
-  <ol class="post-list">
+
+<ol class='post-list'>
     {% for post in paginator.posts %}
-      <li>
-        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-        <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
-        <p> {{ post.url }}</p>
-        <div class="post-list__meta">
-            <time datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
+
+      <li id={{post.id}} style = "display: none">
+        <h2 class='post-list__post-title post-title'><a href='{{ site.baseurl }}{{ post.url }}' title='{{ post.title }}'>{{ post.title }}</a></h2>
+        <p class='excerpt'>{{ post.excerpt | strip_html }}&hellip;</p>
+        <div class='post-list__meta'>
+            <time datetime='{{ post.date | date: '%Y-%m-%d %H:%M' }}' class='post-list__meta--date date'>{{ post.date | date: '%-d %b %Y' }}</time>
             {% if post.tags.size > 0 %}
-            &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+            &#8226; <span class='post-meta__tags'>on {% for tag in post.tags %}<a href='{{ site.baseurl }}/tags/#{{ tag }}'>{{ tag }}</a> {% endfor %}</span>
             {% endif %}
         </div>
-        <hr class="post-list__divider">
+        <hr class='post-list__divider'>
       </li>
+
     {% endfor %}
   </ol>
 
-  <hr class="post-list__divider ">
+
 
   {% if paginator.previous_page or paginator.next_page %}
       {% include pagination.html %}
