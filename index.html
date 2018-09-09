@@ -12,7 +12,7 @@ robots: noindex
     #mynetwork {
       width: (window.innerWidth) + "px";
       height: 100%;
-      border: 1px solid lightgray;
+      border: 0px solid lightgray;
       background-color:#ffffff;
     }
   </style>
@@ -47,12 +47,12 @@ robots: noindex
       //{id: 6, group: 'tools', label: 'ROS', shape: 'circularImage', image: DIR + 'ros.png'},
       {id: 7, group: 'tools', label: 'Arduino', shape: 'circularImage', image: DIR + 'arduino.png'},
       //{id: 8, group: 'tools', label: 'RPi', shape: 'circularImage', image: DIR + 'rapsberrypi.png'},
-      {id: 30, group: 'projects', mapsTo: '/2016/robot-arm', label: 'OpenCV Arm', shape: 'circularImage', image: DIR + 'gloveArm.jpg'},
-      {id: 32, group: 'projects' , mapsTo: '/2018/woo-game-jam', label: 'Woo Game Jam', shape: 'circularImage', image: DIR + 'jam.jpg'},
-      {id: 34, group: 'projects' , mapsTo: '/2017/goodyear-internship', label: 'Goodyear', shape: 'circularImage', image: DIR + 'goodyear-team-advisors.jpg'},
-      {id: 33, group: 'projects', mapsTo: '/2017/ashesi-innovation-experience-coach', label: 'Ashesi Coach', shape: 'circularImage', image: DIR + 'ashesiHouseCropped.jpg'},
-      {id: 35, group: 'projects', mapsTo: '/2017/skid-rover-gloves', label: 'Skid Rover', shape: 'circularImage', image: DIR + 'gloveBotCropped.jpg'},
-      {id: 31, group: 'projects', mapsTo: '/2016/history-department-internship', label: 'Wooster\'s 150th', shape: 'circularImage', image: DIR + 'oldmainShot.png'}
+      {id: 30, group: 'projects', mapsTo: '/2016/robot-arm', label: 'OpenCV Robotic Arm', shape: 'circularImage', image: DIR + 'gloveArm.jpg'},
+      {id: 32, group: 'projects' , mapsTo: '/2018/woo-game-jam', label: 'Game Jam at Wooster', shape: 'circularImage', image: DIR + 'jam.jpg'},
+      {id: 34, group: 'projects' , mapsTo: '/2017/goodyear-internship', label: 'Predicting Tire Tread Wear\nat Goodyear', shape: 'circularImage', image: DIR + 'goodyear-team-advisors.jpg'},
+      {id: 33, group: 'projects', mapsTo: '/2017/ashesi-innovation-experience-coach', label: 'CS Coach at\nAshesi U. in Ghana', shape: 'circularImage', image: DIR + 'ashesiHouseCropped.jpg'},
+      {id: 35, group: 'projects', mapsTo: '/2017/skid-rover-gloves', label: 'Glove Accelerometers\nControl Rover', shape: 'circularImage', image: DIR + 'gloveBotCropped.jpg'},
+      {id: 31, group: 'projects', mapsTo: '/2016/history-department-internship', label: 'VR building\nWooster’s 150th\nAnniversary', shape: 'circularImage', image: DIR + 'oldmainShot.png'}
     ]);
 
     // create an array with edges
@@ -78,14 +78,13 @@ robots: noindex
       nodes: nodes,
       edges: edges
     };
+
     var options = {
-
-
-
+      layout:{randomSeed:378},
       "physics": {
     "barnesHut": {
       "gravitationalConstant": -2800,
-      "centralGravity": .1,
+      "centralGravity": .05,
       "damping": 0.5
     },
     "minVelocity": 0.04
@@ -97,19 +96,18 @@ robots: noindex
           border: '#222222',
           background: '#666666'
         },
-        font:{color:'#222222'}
+        font:{color:'#000000'}
       },
       edges: {
         color: 'lightgray'
       },
       groups: {
           tools: {
-              color: {border:'darkgreen'},
-
+              color: {border:'lightgray'},
           },
           projects: {
-              color: {border:'darkblue'},
-              size: 60,
+              color: {border:'black'},
+              size: 80,
 
           }
       }
