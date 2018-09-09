@@ -13,16 +13,19 @@ robots: noindex
       width: (window.innerWidth) + "px";
       height: 100%;
       border: 1px solid lightgray;
-      background-color:#b3b3b3;
+      background-color:#ffffff;
     }
   </style>
+
   <div id="mynetwork"></div>
+
 
   <script type="text/javascript">
     var last = '';
     var all = document.getElementsByClassName('content-wrapper');
     for (var i = 0; i < all.length; i++) {
       all[i].style.height = '100%';
+      all[i].style.width = 'auto';
     }
     var all = document.getElementsByClassName('content-wrapper__inner');
 
@@ -40,12 +43,15 @@ robots: noindex
       {id: 3, group: 'tools', label: 'Python', shape: 'circularImage', image: DIR + 'python.png'},
       {id: 4, group: 'tools', label: 'Wordpress', shape: 'circularImage', image: DIR + 'wordpress.png'},
       {id: 5, group: 'tools', label: 'C#', shape: 'circularImage', image: DIR + 'csharp.png'},
-      {id: 6, group: 'tools', label: 'ROS', shape: 'circularImage', image: DIR + 'ros.png'},
+      {id: 8, group: 'tools', label: 'Leadership', shape: 'circularImage', image: DIR + 'leadership.png'},
+      //{id: 6, group: 'tools', label: 'ROS', shape: 'circularImage', image: DIR + 'ros.png'},
       {id: 7, group: 'tools', label: 'Arduino', shape: 'circularImage', image: DIR + 'arduino.png'},
-      {id: 8, group: 'tools', label: 'RPi', shape: 'circularImage', image: DIR + 'rapsberrypi.png'},
+      //{id: 8, group: 'tools', label: 'RPi', shape: 'circularImage', image: DIR + 'rapsberrypi.png'},
       {id: 30, group: 'projects', mapsTo: '/2016/robot-arm', label: 'OpenCV Arm', shape: 'circularImage', image: DIR + 'gloveArm.jpg'},
       {id: 32, group: 'projects' , mapsTo: '/2018/woo-game-jam', label: 'Woo Game Jam', shape: 'circularImage', image: DIR + 'jam.jpg'},
+      {id: 34, group: 'projects' , mapsTo: '/2017/goodyear-internship', label: 'Goodyear', shape: 'circularImage', image: DIR + 'goodyear-team-advisors.jpg'},
       {id: 33, group: 'projects', mapsTo: '/2017/ashesi-innovation-experience-coach', label: 'Ashesi Coach', shape: 'circularImage', image: DIR + 'ashesiHouseCropped.jpg'},
+      {id: 35, group: 'projects', mapsTo: '/2017/skid-rover-gloves', label: 'Skid Rover', shape: 'circularImage', image: DIR + 'gloveBotCropped.jpg'},
       {id: 31, group: 'projects', mapsTo: '/2016/history-department-internship', label: 'Wooster\'s 150th', shape: 'circularImage', image: DIR + 'oldmainShot.png'}
     ]);
 
@@ -57,6 +63,12 @@ robots: noindex
       {from: 31, to: 2},
       {from: 31, to: 4},
       {from: 32, to: 1},
+      {from: 34, to: 3},
+      {from: 35, to: 7},
+      {from: 33, to: 8},
+      {from: 32, to: 8},
+      {from: 31, to: 5},
+      {from: 32, to: 5},
       {from: 33, to: 7}
     ]);
 
@@ -67,11 +79,17 @@ robots: noindex
       edges: edges
     };
     var options = {
-      layout: {
-        hierarchical: {
-            direction: "DU"
-        }
-      },
+
+
+
+      "physics": {
+    "barnesHut": {
+      "gravitationalConstant": -2800,
+      "centralGravity": .1,
+      "damping": 0.5
+    },
+    "minVelocity": 0.04
+  },
       nodes: {
         borderWidth:7,
         size:40,
@@ -86,11 +104,11 @@ robots: noindex
       },
       groups: {
           tools: {
-              color: {border:'lightgreen'},
+              color: {border:'darkgreen'},
 
           },
           projects: {
-              color: {border:'lightblue'},
+              color: {border:'darkblue'},
               size: 60,
 
           }
@@ -106,7 +124,10 @@ robots: noindex
         }
         try {
           var showPost = nodes.get(this.getNodeAt(params.pointer.DOM)).mapsTo;
-          document.getElementById(showPost).style.display = 'block';
+          //document.getElementById(showPost).style.display = 'block';
+          if (showPost != undefined){
+              window.location.href = '{{site.baseurl}}' + showPost;
+            }
           last = showPost;
         }
         catch(err) {
@@ -115,6 +136,7 @@ robots: noindex
         console.log('click event, getNodeAt returns: ' + this.getNodeAt(params.pointer.DOM));
     });
   </script>
+
 
 <div class="main-post-list">
 
