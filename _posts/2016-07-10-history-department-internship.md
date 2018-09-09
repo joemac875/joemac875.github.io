@@ -26,7 +26,6 @@ Designed to be a companion to the exhibit, the website was the bulk of the teamâ
 
 Myself and another student intern did the bulk of creating the architecture of the site and its design with WordPress and a custom theme (we hacked an existing theme).
 
-The whole team conducted archival research and wrote articles for the site. It can be found at [150th.wooster.edu]("150th.wooster.edu")
-
+The whole team conducted archival research and wrote articles for the site. It can be found at [150th.wooster.edu](https://150th.wooster.edu). 
 ![A screenshot of the website's home page]({{site.baseurl}}/assets/websiteShot.png)
 
