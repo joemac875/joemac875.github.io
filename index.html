@@ -13,7 +13,7 @@ robots: noindex
       width: (window.innerWidth) + "px";
       height: 100%;
       border: 0px solid lightgray;
-      background-color:#ffffff;
+      background-color:#222;
     }
   </style>
 
@@ -38,15 +38,15 @@ robots: noindex
     var DIR = '{{site.baseurl}}/assets/';
     // create an array with nodes
     var nodes = new vis.DataSet([
-      {id: 1, group: 'tools', label: 'Unity', shape: 'circularImage', image: DIR + 'unity.png'},
-      {id: 2, group: 'tools', label: 'Blender', shape: 'circularImage', image: DIR + 'blender.png'},
-      {id: 3, group: 'tools', label: 'Python', shape: 'circularImage', image: DIR + 'python.png'},
-      {id: 4, group: 'tools', label: 'Wordpress', shape: 'circularImage', image: DIR + 'wordpress.png'},
-      {id: 5, group: 'tools', label: 'C#', shape: 'circularImage', image: DIR + 'csharp.png'},
-      {id: 8, group: 'tools', label: 'Leadership', shape: 'circularImage', image: DIR + 'leadership.png'},
+      {id: 1, group: 'tools', label: '', shape: 'circularImage', image: DIR + 'unity.png'},
+      {id: 2, group: 'tools', label: '', shape: 'circularImage', image: DIR + 'blender.png'},
+      {id: 3, group: 'tools', label: '', shape: 'circularImage', image: DIR + 'python.png'},
+      {id: 4, group: 'tools', label: '', shape: 'circularImage', image: DIR + 'wordpress.png'},
+      {id: 5, group: 'tools', label: '', shape: 'circularImage', image: DIR + 'csharp.png'},
+      {id: 8, group: 'tools', label: '', shape: 'circularImage', image: DIR + 'leadership.png'},
       //{id: 6, group: 'tools', label: 'ROS', shape: 'circularImage', image: DIR + 'ros.png'},
-      {id: 7, group: 'tools', label: 'Arduino', shape: 'circularImage', image: DIR + 'arduino.png'},
-      {id: 9, group: 'tools', label: 'C', shape: 'circularImage', image: DIR + 'c.png'},
+      {id: 7, group: 'tools', label: '', shape: 'circularImage', image: DIR + 'arduino.png'},
+      {id: 9, group: 'tools', label: '', shape: 'circularImage', image: DIR + 'c.png'},
       //{id: HOI, group: 'tools', label: 'RPi', shape: 'circularImage', image: DIR + 'rapsberrypi.png'},
       {id: 30, group: 'projects', mapsTo: '/2016/robot-arm', label: 'OpenCV Robotic Arm', shape: 'circularImage', image: DIR + 'gloveArm.jpg'},
       {id: 32, group: 'projects' , mapsTo: '/2018/woo-game-jam', label: 'Game Jam at Wooster', shape: 'circularImage', image: DIR + 'jam.jpg'},
@@ -54,7 +54,7 @@ robots: noindex
       {id: 33, group: 'projects', mapsTo: '/2017/ashesi-innovation-experience-coach', label: 'CS Coach at\nAshesi U. in Ghana', shape: 'circularImage', image: DIR + 'ashesiHouseCropped.jpg'},
       {id: 35, group: 'projects', mapsTo: '/2017/skid-rover-gloves', label: 'Glove Accelerometers\nControl Rover', shape: 'circularImage', image: DIR + 'gloveBotCropped.jpg'},
       {id: 31, group: 'projects', mapsTo: '/2016/history-department-internship', label: 'VR building\nWooster’s 150th\nAnniversary', shape: 'circularImage', image: DIR + 'oldmainShot.png'},
-      {id: 36, group: 'projects', mapsTo: '/2018/swarm-phagocytosis', label: 'Creating Phagocytes With Swarm Bots', shape: 'circularImage', image: DIR + 'kilobots.png'}
+      {id: 36, group: 'projects', mapsTo: '/2018/swarm-phagocytosis', label: 'Creating Phagocytes\nWith Swarm Bots', shape: 'circularImage', image: DIR + 'kilobots.png'}
     ]);
 
     // create an array with edges
@@ -97,20 +97,21 @@ robots: noindex
         borderWidth:7,
         size:40,
       color: {
-          border: '#222222',
+          border: '#666666',
           background: '#666666'
         },
-        font:{color:'#000000'}
+        font:{color:'#888', size:18, strokeColor : '#000', strokeWidth: 4}
       },
       edges: {
         color: 'lightgray'
       },
       groups: {
           tools: {
-              color: {border:'lightgray'},
+              color: {border:'222'},
           },
           projects: {
-              color: {border:'black'},
+              color: {border:'#82b1ff'},
+
               size: 80,
 
           }
