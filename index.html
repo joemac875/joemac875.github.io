@@ -113,6 +113,14 @@ robots: noindex
       }
     };
     var network = new vis.Network(container, data, options);
+    network.once("beforeDrawing", function() {
+          var focusOption = {
+            scale: 1.5,
+            locked: false
+          }
+          network.focus(31,focusOption);
+        });
+
     network.on("select", function (params) {
         params.event = "[original event]";
         try {
@@ -125,14 +133,18 @@ robots: noindex
           //document.getElementById(showPost).style.display = 'block';
           if (showPost != undefined){
               window.location.href = '{{site.baseurl}}' + showPost;
+
             }
+
           last = showPost;
         }
         catch(err) {
         }
 
         console.log('click event, getNodeAt returns: ' + this.getNodeAt(params.pointer.DOM));
+
     });
+
   </script>
 
 
