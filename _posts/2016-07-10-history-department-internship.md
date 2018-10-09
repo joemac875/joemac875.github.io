@@ -1,5 +1,5 @@
 ---
-title:  "History Department Internship"
+title:  "Working for Wooster's 150th"
 date:   2016-07-10 18:00:00 -0400
 categories: interships
 ---

@@ -1,5 +1,5 @@
 ---
-title:  "Woo Game Jame"
+title:  "Woo Game Jam"
 date:   2018-04-15 18:00:00 -0400
 categories: leadership
 ---
