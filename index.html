@@ -84,11 +84,11 @@ robots: noindex
     };
 
     var options = {
-      layout:{randomSeed:378},
+      layout:{randomSeed:1},
       "physics": {
     "barnesHut": {
       "gravitationalConstant": -5000,
-      "centralGravity": .00,
+      "centralGravity": .5,
       "damping": 0.5
     },
     "minVelocity": 0.04
@@ -123,7 +123,7 @@ robots: noindex
             scale: 1,
             locked: false
           }
-          network.focus(31,focusOption);
+          network.focus(9,focusOption);
         });
 
     network.on("select", function (params) {
